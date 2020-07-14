@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Tarea 6</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<meta charset="utf-8">
+</head>
+<body>
+    <header>
+        <a href="index.html"><H1 id="palabras">Inicio</H1></a>
+        <a href="06_TareaJS.html"><H1 id="palabras">Tarea 6</H1></a>
+        <a href="07_TareaJS.html"><H1 id="palabras">Tarea 7</H1></a>                     
+        <a href="08_TareaJS.html"><H1 id="palabras">Tarea 8</H1></a> 
+        <a href="09_TareaJS.html"><H1 id="palabras">Tarea 9</H1></a> 
+        <a href="10_TareaJS.html"><H1 id="palabras">Tarea 10</H1></a> 
+
+    </header>	
+<!--
+1. Crear una nueva página web nombrarla 06_TareaJS.html
+2. Desarrolle un programa que imprima los números pares que hay del 1 al 100, también
+imprima cuantos son y la suma de ellos.
+3. Añadir comentarios que expliquen el funcionamiento del código.
+-->
+<h1>Los numeros pares del 1 al 100 son:</h1>
+<script>
+ //Primero, utilizaremos el ciclo for, donde lo iniciaremos desde 1, despues lo definimos hasta que sea menor o igual a 100, y lo incrementamos.
+for(var i =1; i<=100; i++){
+// utilizamos un ciclo if, donde vamos a dividir todos los numeros del 1 al 100, y si el reciduo es igual a 0, lo imprimimos.
+	if(i%2==0){
+// imprimimos el resultado que cumplió con nuestra condición.
+	document.write(i + "<br>");
+	}
+}
+// iniciamos una variable que será la manera de sumar a todos los numeros pares.
+	var par=0;
+// utilizamos un ciclo for donde vamos a dividir todos los numeros del 1 al 100, y si el reciduo es igual a 0, lo pasaremos al proximo ciclo.
+for (var i=1; i<=100; i++)
+// para sumarlos, utilizamos el if, sumaremos solo los numeros cuyo reciduo sea 0.
+if (i%2 == 0) {par += i}
+
+//para saber cuantos numeros pares hay, utilizamos una formula matematica donde se restan el ultimo numero impar + el primero, se divide entre 2 y se le suma 1.
+//nota: no supe como poner el ultimo numero par, donde solo le sumaria esa variable +1 y ejecutaria bien mi formula.
+var total = ((99 - 1)/2)+1 ;
+
+//mandamos un alert para dar a conocer cual es la suma de los numeros pares
+alert("La suma de los numeros pares que hay del 1 al 100 es: " + par);
+// mandamos un alert para conocer cuantos numeros pares hay en la serie del 1 al 100
+alert("Los numeros pares que hay entre el 1 al 100 son: " + total);
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Tarea 9</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<meta charset="utf-8">
+</head>
+<body>
+    <header>
+        <a href="index.html"><H1 id="palabras">Inicio</H1></a>
+        <a href="06_TareaJS.html"><H1 id="palabras">Tarea 6</H1></a>
+        <a href="07_TareaJS.html"><H1 id="palabras">Tarea 7</H1></a>                     
+        <a href="08_TareaJS.html"><H1 id="palabras">Tarea 8</H1></a> 
+        <a href="09_TareaJS.html"><H1 id="palabras">Tarea 9</H1></a> 
+        <a href="10_TareaJS.html"><H1 id="palabras">Tarea 10</H1></a> 
+
+    </header>	
+<!--
+Crear una nueva página web nombrarla 09_TareaJS.html
+2. Desarrolle un programa en el que, solicite al usuario su año de nacimiento y le indique el
+nombre de la generación a la que pertenece. Repetir hasta que el usuario indique que ya no
+desear conocer esa información.
+-->
+<script>
+//creamos la variable donde se decidirá si quiere continuar o no
+var decide;
+//creamos el ciclo do-while
+do{
+    //preguntamos la fecha de nacimiento
+    var generacion = prompt("Ingresa tu fecha de nacimiento");
+    //creamos el ciclo if, donde pondremos como condición los rangos de la tabla empezando por la generación z.
+    if(generacion>=1994 && generacion<=2010){
+        alert("Tu generación es denominada GENERACIÓN Z");}
+    //pondremos el sino con los datos de la generación Y
+    else if (generacion>=1981 && generacion<=1993){
+        alert("Tu generación es denominada GENERACIÓN Y");}
+    //pondremos el sino con los datos de la generación x
+    else if (generacion>=1969 && generacion<=1980){
+        alert("Tu generación es denominada GENERACIÓN X");}
+    //pondremos el sino con los datos de la generación baby boom
+    else if (generacion>=1949 && generacion<=1968){
+        alert("Tu generación es denominada BABY BOOM");}
+//pondremos en ejecución el ciclo do-while, dependiendo la decisión de la persona, primero con una ventana emergente.
+    decide = prompt("¿Quieres obtener otra generación?    si / no ");
+}while(decide=="si")
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+#contenedor
+{
+    width: 80%;
+    margin: 0 auto;
+}
+body
+{
+	background: url("../img/fondo2.gif");
+	background-size:cover;
+    min-height: 630px;
+}
+#palabras
+{
+	color: white;
+	text-decoration: none;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Tarea 7</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<meta charset="utf-8">
+</head>
+<body>
+    <header>
+        <a href="index.html"><H1 id="palabras">Inicio</H1></a>
+        <a href="06_TareaJS.html"><H1 id="palabras">Tarea 6</H1></a>
+        <a href="07_TareaJS.html"><H1 id="palabras">Tarea 7</H1></a>                     
+        <a href="08_TareaJS.html"><H1 id="palabras">Tarea 8</H1></a> 
+        <a href="09_TareaJS.html"><H1 id="palabras">Tarea 9</H1></a> 
+        <a href="10_TareaJS.html"><H1 id="palabras">Tarea 10</H1></a> 
+
+    </header>	
+<!--
+Desarrolle un programa en el que, con base a los datos de la categoría y el sueldo de un
+trabajador, calcule el aumento correspondiente teniendo en cuenta la siguiente tabla. Imprima
+la categoría del trabajador y su nuevo sueldo. 
+-->
+<script>
+    //asignamos una variable al sueldo que se va a pedir.
+    sueldo = parseInt(prompt("Ingresa tu sueldo actual"));
+    //ahora preguntamos una categoria, cuyo valor lo utilizaremos en el switch.
+    categoria = parseInt(prompt("Ingresa qué categoria eres /1/2/3/4"));
+    //seleccionamos categoria como condición para ejecutar el switch
+    switch(categoria){
+        //en el caso 1 se imprime la categoria con el nuevo sueldo que se multiplica por .15 y se suma al sueldo mencionado otra vez.
+        case 1:
+        document.write("Tu categoria es 1 y tu nuevo sueldo es " + (sueldo * .15 + sueldo));
+            break;
+        //en el caso 2 se imprime la categoria con el nuevo sueldo que se multiplica por .10 y se suma al sueldo mencionado otra vez.
+        case 2:
+        document.write("Tu categoria es 2 y tu nuevo sueldo es " + (sueldo * .10 + sueldo));
+            break;
+        //en el caso 3 se imprime la categoria con el nuevo sueldo que se multiplica por .8 y se suma al sueldo mencionado otra vez.
+        case 3:
+        document.write("Tu categoria es 3 y tu nuevo sueldo es " + (sueldo * .8 + sueldo));
+            break;
+        //en el caso 4 se imprime la categoria con el nuevo sueldo que se multiplica por .7 y se suma al sueldo mencionado otra vez.
+        case 4:
+        document.write("Tu categoria es 4 y tu nuevo sueldo es " + (sueldo *.7 + sueldo));
+            break;
+        //aquí agregamos un default por si ingresa una categoria inexistente. 
+        default:
+        document.write("No existe esa categoria");
+    }
+</script>
+
+
+</body>
+</html>

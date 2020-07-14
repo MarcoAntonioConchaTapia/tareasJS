@@ -1,0 +1,11 @@
+#inicio
+{
+	background: url("../img/fondo3.gif");
+	background-size:cover;
+    min-height: 640px;
+}
+#palabras
+{
+	color: white;
+	text-decoration: none;
+}

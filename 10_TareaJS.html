@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Tarea 10</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<meta charset="utf-8">
+</head>
+<body>
+    <header>
+        <a href="index.html"><H1 id="palabras">Inicio</H1></a>
+        <a href="06_TareaJS.html"><H1 id="palabras">Tarea 6</H1></a>
+        <a href="07_TareaJS.html"><H1 id="palabras">Tarea 7</H1></a>                     
+        <a href="08_TareaJS.html"><H1 id="palabras">Tarea 8</H1></a> 
+        <a href="09_TareaJS.html"><H1 id="palabras">Tarea 9</H1></a> 
+        <a href="10_TareaJS.html"><H1 id="palabras">Tarea 10</H1></a> 
+
+    </header>	
+<!--
+1. Crear una nueva página web nombrarla 10_TareaJS.html
+2. Desarrolle un programa en el que, pregunte al usuario si desea viajar. Si el usuario indica que
+SI, preguntar él mes de viaje, y mostrar los destino y los precios (usar la tabla). Si el usuario
+indicó que NO, no hacer nada. Repetir hasta que el usuario indique NO.
+-->
+<script>
+    //iniciamos con la oregunta si quiere ver información de destinos.
+var info = prompt("¿Quieres ver costos y destinos?  si/no");
+
+    //si ponemos si, se inicia el ciclo while.
+while (info === "si"){
+    //para ejecutar el switch, utilizaremos el valor numerico de cada mez.
+    var mes = parseInt(prompt("¿En qué mes quieres viajar?  utiliza del 1 al 12"));
+    switch(mes){
+        //El caso 1 ejecutara el mes de enero, con los precios y destinos proporcionados por la tabla.
+        case 1:
+        alert("En el mes de Enero se tienen los siguientes precios y destinos: " + "  " + "Cancún por 10,000 mxn " + "  " + "Disneylandia por 20,000 mxn" + "  " + "Ixtapa por 8,000 mxn" + "  " + "Las vegas por 18,000 mxn");
+        //una vez mostrado la información, se le pregunta si quiere seguir viendo otra información.
+                info = prompt("¿Quieres obtener más información de los viajes?  si/no");  
+        break;
+
+        case 2:
+        //El caso 1 ejecutara el mes de febrero, con los precios y destinos proporcionados por la tabla.
+        alert("En el mes de Febrero se tienen los siguientes precios y destinos: " + "  " + "Cancún por 10,000 mxn " + "  " + "Disneylandia por 20,000 mxn" + "  " + "Ixtapa por 8,000 mxn" + "  " + "Las vegas por 18,000 mxn");  
+                info = prompt("¿Quieres obtener más información de los viajes?  si/no");
+        break;
+
+        case 3: 
+        //El caso 1 ejecutara el mes de marzo, con los precios y destinos proporcionados por la tabla.
+        alert("En el mes de Marzo se tienen los siguientes precios y destinos: " + "  " + "Cancún por 10,000 mxn " + "  " + "Disneylandia por 20,000 mxn" + "  " + "Ixtapa por 8,000 mxn" + "  " + "Las vegas por 18,000 mxn");
+                info = prompt("¿Quieres obtener más información de los viajes?  si/no");
+        break;
+
+        case 4:
+        //El caso 1 ejecutara el mes de abril, con los precios y destinos proporcionados por la tabla.
+        alert("En el mes de Abril se tienen los siguientes precios y destinos: " + "  " + "Cancún por 10,000 mxn " + "  " + "Disneylandia por 20,000 mxn" + "  " + "Ixtapa por 8,000 mxn" + "  " + "Las vegas por 18,000 mxn");  
+                info = prompt("¿Quieres obtener más información de los viajes?  si/no");
+        break;
+
+        case 5:
+        //El caso 1 ejecutara el mes de mayo, con los precios y destinos proporcionados por la tabla.
+        alert("En el mes de Mayo se tienen los siguientes precios y destinos: " + "  " + "Cancún por 10,000 mxn " + "  " + "Disneylandia por 20,000 mxn" + "   " + "Ixtapa por 8,000 mxn" + "  " + "Las vegas por 18,000 mxn");  
+                info = prompt("¿Quieres obtener más información de los viajes?  si/no");
+        break;
+
+        case 6:
+        //El caso 1 ejecutara el mes de junio, con los precios y destinos proporcionados por la tabla.
+        alert("En el mes de Junio se tienen los siguientes precios y destinos: " + "  " + "Cancún por 10,000 mxn " + "  " + "Disneylandia por 20,000 mxn" + "  " + "Ixtapa por 8,000 mxn" + "  " + "Las vegas por 18,000 mxn");  
+                info = prompt("¿Quieres obtener más información de los viajes?  si/no");
+        break;
+
+        case 7:
+        //El caso 1 ejecutara el mes de julio, con los precios y destinos proporcionados por la tabla.
+        alert("En el mes de Julio se tienen los siguientes precios y destinos: " + "  " + "Cancún por 10,000 mxn " + "  " + "Disneylandia por 20,000 mxn" + "  " + "Ixtapa por 8,000 mxn" + "  " + "Las vegas por 18,000 mxn");  
+                info = prompt("¿Quieres obtener más información de los viajes?  si/no");
+        break;
+
+        case 8:
+        //El caso 1 ejecutara el mes de agosto, con los precios y destinos proporcionados por la tabla.
+        alert("En el mes de Agosto se tienen los siguientes precios y destinos: " + "  " + "Cancún por 7,000 mxn " + "  " + "Disneylandia por 12,000 mxn" + "  " + "Ixtapa por 5,000 mxn" + "  " + "Las vegas por 12,000 mxn");  
+                info = prompt("¿Quieres obtener más información de los viajes?  si/no");
+        break;
+
+        case 9:
+        //El caso 1 ejecutara el mes de septiembre, con los precios y destinos proporcionados por la tabla.
+        alert("En el mes de Septiembre se tienen los siguientes precios y destinos: " + "  " + "Cancún por 7,000 mxn " + "  " + "Disneylandia por 12,000 mxn" + "  " + "Ixtapa por 5,000 mxn" + "  " + "Las vegas por 12,000 mxn"); 
+                info = prompt("¿Quieres obtener más información de los viajes?  si/no"); 
+        break;
+
+        case 10:
+        //El caso 1 ejecutara el mes de octubre, con los precios y destinos proporcionados por la tabla.
+        alert("En el mes de Octubre se tienen los siguientes precios y destinos: " + "  " + "Cancún por 7,000 mxn " + "  " + "Disneylandia por 12,000 mxn" + "   " + "Ixtapa por 5,000 mxn" + "  " + "Las vegas por 12,000 mxn");  
+                info = prompt("¿Quieres obtener más información de los viajes?  si/no");
+        break;
+
+        case 11:
+        //El caso 1 ejecutara el mes de noviembre, con los precios y destinos proporcionados por la tabla.
+        alert("En el mes de Noviembre se tienen los siguientes precios y destinos: " + "  " + "Cancún por 7,000 mxn " + "  " + "Disneylandia por 12,000 mxn" + "  " + "Ixtapa por 5,000 mxn" + "  " + "Las vegas por 12,000 mxn");  
+                info = prompt("¿Quieres obtener más información de los viajes?  si/no");
+        break;
+
+        case 12:
+        //El caso 1 ejecutara el mes de diciembre, con los precios y destinos proporcionados por la tabla.
+        alert("En el mes de Diciembre se tienen los siguientes precios y destinos: " + "  " + "Cancún por 7,000 mxn " + "  " + "Disneylandia por 12,000 mxn" + "  " + "Ixtapa por 5,000 mxn" + "  " + "Las vegas por 12,000 mxn");  
+                info = prompt("¿Quieres obtener más información de los viajes?  si/no");
+        break;
+        //En el caso que ingrese un mes equivocado, le mandará el mensaje de alert
+        default:
+        alert("Número de mes desconocido");
+
+        info = prompt("¿Quieres obtener más información de los viajes?  si/no");
+    }
+}
+
+</script>
+
+
+</body>
+</html>

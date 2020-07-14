@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Tarea 8</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<meta charset="utf-8">
+</head>
+<body>
+    <header>
+        <a href="index.html"><H1 id="palabras">Inicio</H1></a>
+        <a href="06_TareaJS.html"><H1 id="palabras">Tarea 6</H1></a>
+        <a href="07_TareaJS.html"><H1 id="palabras">Tarea 7</H1></a>                     
+        <a href="08_TareaJS.html"><H1 id="palabras">Tarea 8</H1></a> 
+        <a href="09_TareaJS.html"><H1 id="palabras">Tarea 9</H1></a> 
+        <a href="10_TareaJS.html"><H1 id="palabras">Tarea 10</H1></a> 
+
+    </header>	
+<!--
+1. Crear una nueva página web nombrarla 08_TareaJS.html
+2. El usuario desea comprar un helado y el precio depende del topping que elija. Desarrolle un
+programa en el que, donde el usuario indique el topping que desea y se le indique el precio
+del helado.
+-->
+<script>
+//ingresamos el costo del helado solo. 
+    var costo = 20;
+//creamos el switch dependiendo a los topping que le quiera agregar usando numeros.
+    var topping = parseInt(prompt("(El precio del helado sin topping es de $20 MXN)Ingresa que topping (adición) deseas: 1= Oreo($10) / 2=Kitkat($15) / 3= Cajeta($10) / 4 = ChocoNuez($20) / 5 = sin topping"));
+
+    switch(topping){
+//El caso 1 es para l topping de oreo con un valor extra de 10 pesos.
+        case 1:
+        document.write("El costo de tu helado es de: " + (20 + 10) + " Pesos mexicanos");
+            break;
+//El caso 2 es para l topping de kitkat con un valor extra de 15 pesos.
+        case 2:
+        document.write("El costo de tu helado es de: " + (20 + 15) + " Pesos mexicanos");
+            break;
+//El caso 3 es para l topping de cajeta con un valor extra de 30 pesos.
+        case 3:
+        document.write("El costo de tu helado es de: " + (20 + 10) + " Pesos mexicanos");
+            break;
+//El caso 4 es para l topping de choconuez con un valor extra de 40 pesos.
+        case 4:
+        document.write("El costo de tu helado es de: " + (20 + 20) + " Pesos mexicanos");
+            break;
+//El caso 5 es para l topping de sin topping con un valor extra de  pesos.
+        case 5:
+        document.write("El costo de tu helado es de: " + (20) + " Pesos mexicanos");
+            break;
+//En este caso se le manda mensaje diciendo que ese topping no lo tenemos ahora.
+        default:
+        document.write("Desafotunadamente ese topping no lo tenemos.");
+    }
+</script>
+
+
+</body>
+</html>
